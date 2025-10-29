@@ -2,10 +2,11 @@ import { createBrowserRouter, Navigate } from "react-router";
 import { lazy } from "react";
 
 
-import { AdminLayout } from "@/admin/layouts/AdminLayout";
+
 import { DashboardPage } from "@/admin/pages/dashboard/DashboardPage";
 import { AdminProductPage } from "@/admin/pages/product/AdminProductPage";
 import { AdminProductsPage } from "@/admin/pages/products/AdminProductsPage";
+import AdminLayout from "@/admin/layouts/AdminLayout";
 
 
 import { LoginPage } from "@/auth/pages/login/LoginPage";
@@ -65,7 +66,7 @@ export const appRouter = createBrowserRouter([
         element: <DashboardPage />,
       },
       {
-        path: "product/:id",
+        path: "products/:id",
         element: <AdminProductPage />,
       },
       {
