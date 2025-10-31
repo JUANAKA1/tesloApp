@@ -16,6 +16,7 @@ import { appRouter } from './router/app.router';
 const queryClient = new QueryClient();
 
 const CheckAuthProvider = ({ children }: PropsWithChildren) => {
+  
   const { checkAuthStatus } = useAuthStore();
 
   const { isLoading } = useQuery({
